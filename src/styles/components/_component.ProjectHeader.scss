@@ -1,0 +1,9 @@
+.ProjectHeader
+{
+  margin: 30px 0;
+}
+
+.ProjectHeader__title
+{
+  @include mediumHeading;
+}
