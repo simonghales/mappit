@@ -1,13 +1,11 @@
 
-@import "./spritesheet/spritesheet";
-
 @import "./settings/settings.color";
 @import "./settings/settings.fonts";
 
+@import "./tools/tools.buttons";
 @import "./tools/tools.general";
 @import "./tools/tools.layout";
 @import "./tools/tools.responsive";
-@import "./tools/tools.spritesheet";
 @import "./tools/tools.typography";
 
 @import "./generic/generic.reset";
@@ -18,4 +16,7 @@
 @import "./components/component.siteHeader";
 @import "./components/component.SiteBody";
 @import "./components/component.Project";
+@import "./components/component.ProjectCard";
+@import "./components/component.ProjectColumn";
 @import "./components/component.ProjectHeader";
+@import "./components/component.ProjectNewCard";

@@ -1,0 +1,13 @@
+@mixin resetButton
+{
+  background: none;
+  border:     0;
+  cursor:     pointer;
+  font-size:  inherit;
+  padding:    0;
+
+  &:focus
+  {
+    outline: none;
+  }
+}

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {observer} from 'mobx-react';
-import store from '../store';
+import store from '../store/store';
 
 const styles: any = require('./clicked.scss');
 

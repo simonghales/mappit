@@ -1,0 +1,27 @@
+.ProjectNewCard
+{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.ProjectNewCard__addButton
+{
+  @include resetButton;
+  color:         $color__medium;
+  text-align:    center;
+  padding:       10px 15px;
+  border-radius: 3px;
+  font-size:     .9rem;
+  transition:    background-color 250ms ease, transform 250ms ease;
+
+  &:hover
+  {
+    background-color: #f6f9fd;
+  }
+
+  &:active
+  {
+    transform: translateY(2px);
+  }
+
+}

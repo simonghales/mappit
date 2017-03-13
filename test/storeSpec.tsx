@@ -1,5 +1,5 @@
 import {useStrict} from 'mobx';
-import {Store} from '../src/store';
+import {Store} from '../src/store/store';
 
 describe('The store', () => {
     let store: Store;

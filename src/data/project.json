@@ -1,0 +1,14 @@
+{
+  "title": "Project Title goes here",
+  "columns": [
+    {
+      "title": "Column A",
+      "cards": [
+        {
+          "title": "Card Title",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae cupiditate deserunt ducimus."
+        }
+      ]
+    }
+  ]
+}

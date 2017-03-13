@@ -61,6 +61,10 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style-loader', 'css-loader?camelCase', 'resolve-url-loader', 'sass-loader?sourceMap', 'postcss-loader?parser=postcss-scss'] // note: removed ?modules to disable css modules 'css-loader?modules&camelCase'
       },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
     ]
   },
   postcss: function () {
