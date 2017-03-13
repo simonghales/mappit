@@ -1,13 +1,16 @@
 
 import {ProjectCard} from './ProjectCard';
+import {observable} from 'mobx';
 export class ProjectColumn {
 
-    title: string;
-    cards: ProjectCard[];
+    id: string;
+    @observable title: string;
+    @observable cards: ProjectCard[] = observable([]);
 
-    constructor(title: string, cards?: ProjectCard[]) {
+    constructor(id: string, title: string, cards?: ProjectCard[]) {
+        this.id = id;
         this.title = title;
-        this.cards = cards;
+        this.cards = observable(cards);
     }
 
 }

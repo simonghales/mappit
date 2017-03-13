@@ -4,7 +4,7 @@ import {Project} from './Project';
 useStrict(true);
 
 export class Store {
-    selectedProject: Project;
+    @observable selectedProject: Project;
     @observable clicked: number = 0;
     @computed get clickedSquared() {
         return this.clicked * this.clicked;

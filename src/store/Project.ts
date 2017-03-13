@@ -1,16 +1,18 @@
 import {ProjectColumn} from './ProjectColumn';
-import {observable, useStrict} from 'mobx';
+import {observable, useStrict, action} from 'mobx';
 
 useStrict(true);
 
 export class Project {
 
-    columns: ProjectColumn[];
+    id: string;
+    @observable columns: ProjectColumn[] = observable([]);
     @observable title: string;
 
-    constructor(title: string, columns?: ProjectColumn[]) {
+    constructor(id: string, title: string, columns?: ProjectColumn[]) {
+        this.id = id;
         this.title = title;
-        this.columns = columns;
+        this.columns = observable(columns);
     }
 
 }

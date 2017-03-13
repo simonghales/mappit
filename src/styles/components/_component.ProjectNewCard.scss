@@ -1,6 +1,9 @@
 .ProjectNewCard
 {
-  margin-top: 15px;
+}
+
+.ProjectNewCard__addButtonWrapper
+{
   text-align: center;
 }
 
@@ -11,12 +14,14 @@
   text-align:    center;
   padding:       10px 15px;
   border-radius: 3px;
-  font-size:     .9rem;
-  transition:    background-color 250ms ease, transform 250ms ease;
+  font-size:     .8rem;
+  font-weight:   700;
+  transition:    background-color 250ms ease, color 250ms ease, transform 250ms ease;
 
   &:hover
   {
-    background-color: #f6f9fd;
+    background-color: $color__faintShade;
+    color:            $color__dark;
   }
 
   &:active
@@ -24,4 +29,47 @@
     transform: translateY(2px);
   }
 
+}
+
+.ProjectNewCard__form
+{
+
+}
+
+.ProjectNewCard__form__textarea
+{
+  border-radius: 3px;
+  border:        1px solid #85c0ff;
+  color:         $color__dark;
+  font-size:     .9rem;
+  padding:       15px;
+  width:         100%;
+  height:        100px;
+  resize:        none;
+
+  &:focus
+  {
+    border-color: $color__primary;
+    outline:      none;
+  }
+
+}
+
+.ProjectNewCard__form__options
+{
+  @include clearfix;
+  margin-top: 5px;
+}
+
+.ProjectNewCard__form__cancelButton
+{
+  @include cancelButton;
+  float:        right;
+  margin-right: 5px;
+}
+
+.ProjectNewCard__form__submitButton
+{
+  @include submitButton;
+  float: right;
 }

@@ -1,13 +1,23 @@
 import * as React from 'react';
+import {ProjectCard as ProjectCardClass} from '../../store/ProjectCard';
+import {observer} from 'mobx-react';
 
-export default class ProjectCard extends React.Component<{}, {}> {
+interface Interface_ProjectCard_Props {
+    card: ProjectCardClass
+}
+
+@observer
+export default class ProjectCard extends React.Component<Interface_ProjectCard_Props, {}> {
     render() {
+        const card = this.props.card;
         return (
             <div className='ProjectCard'>
-                <div className='ProjectCard__title'>Card Title</div>
-                <div className='ProjectCard__description'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae cupiditate deserunt ducimus.
-                </div>
+                <div className='ProjectCard__title'>{card.title}</div>
+                {
+                    card.description ? (
+                        <div className='ProjectCard__description'>{card.description}</div>
+                        ) : null
+                }
             </div>
         );
     }

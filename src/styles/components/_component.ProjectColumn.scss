@@ -21,6 +21,12 @@
 
 .ProjectColumn__cards
 {
+  margin-bottom: 15px;
+
+  .ProjectColumn--noCards &
+  {
+    margin-bottom: 0;
+  }
 
   .ProjectCard
   {
